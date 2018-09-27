@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Livre</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Titre</th>
+                <th>Date de parution</th>
+                <th>Emprunté par</th>
+            </tr>
+            <tr>
+
+
+                <td>@ViewData["LivreTitre"]</td>
+                <td>@ViewData["LivreDate"]</td>
+                <td>@ViewData["LivreEmpruntePar"]</td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

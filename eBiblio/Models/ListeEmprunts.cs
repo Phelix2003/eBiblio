@@ -12,7 +12,7 @@ namespace eBiblio.Models
             return new List<Emprunt>
             {
                 new Emprunt { Client = client1, ListeLivres = new List<Livre>{ livre1 } },
-                new Emprunt { Client = client1, ListeLivres = new List<Livre>{ livre2, livre3}}
+                new Emprunt { Client = client2, ListeLivres = new List<Livre>{ livre2, livre3}}
             };
         }
     }

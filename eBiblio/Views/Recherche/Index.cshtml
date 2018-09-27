@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Noms Livres trouvés</th>
+            </tr>
+            @foreach (eBiblio.Models.Livre livre in ViewData["ListeLivre"] as List<eBiblio.Models.Livre>)
+            {
+                <tr>
+                    <td>@livre.Titre</td>
+                </tr>
+            }
+        </table>
+        <table>
+            <tr>
+                <th>Noms Auteurs trouvés</th>
+            </tr>
+            @foreach (eBiblio.Models.Auteur auteur in ViewData["ListeAuteur"] as List<eBiblio.Models.Auteur>)
+            {
+                <tr>
+                    <td>@auteur.nom</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
